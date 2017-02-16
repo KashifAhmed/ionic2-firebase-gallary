@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--We'll be testing the log out button.-->
+  <div *ngIf="user.currentUser">
+    <!--{{user.currentUser.email}}-->
+    <h3> Login User: {{user.currentUser.displayName}}</h3>
+  </div>
+  <button ion-button block (click)="goToGallery()">
+    Gallery
+  </button>
+  <button ion-button color="positive" block (click)="logMeOut()">
+    Log Me Out Please
+  </button>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>By: kashif91ahmed@gmail.com</ion-title>
+  </ion-toolbar>
+</ion-footer>

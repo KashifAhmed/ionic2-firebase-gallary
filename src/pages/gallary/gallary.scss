@@ -1,0 +1,20 @@
+page-gallary {
+    .card-background-page {
+        ion-card {
+            position: relative;
+            text-align: center;
+            width:40%; 
+            height:auto; 
+            display: inline-block
+        }
+        .card-title {
+            position: absolute;
+            top: 70%;
+            font-size: 2.0em;
+            width: 100%;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+    }
+}
